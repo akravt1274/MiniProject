@@ -48,7 +48,7 @@ main p::first-line{
     font-weight: bold;
 
 }
-main P::selection{
+main p::selection{
     background-color: tomato;
     color: white;
 }
@@ -68,6 +68,15 @@ form input{
 form input:focus{
     outline-color: lightgrey;
 }
+.required label:before {
+    color: #e32;
+    content: ' *';
+    display: inline;
+}
+
+/* input[type="email"]:invalid{
+    border: 2px solid red;
+}*/
 
 /* Style the footer */
 footer{
