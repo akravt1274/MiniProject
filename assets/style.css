@@ -1,7 +1,6 @@
 /* Font and font family for all text */
 *{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;   
 }
 
 header {    
@@ -13,7 +12,10 @@ header {
 body{
     background-color: lig;
 }
-
+img:hover {
+    position: relative;
+    top: -4px;
+}
 ul {  
     list-style-type: none;
     margin: 0;
@@ -34,12 +36,21 @@ li a {
 }
 li a:hover {
     background-color: darkcyan;
+    text-decoration: underline;
 }
 h2 {
     padding: auto;
     background-color: rgb(53, 206, 206);
     color: white;
     
+}
+main p::first-line{
+    font-weight: bold;
+
+}
+main P::selection{
+    background-color: tomato;
+    color: white;
 }
 form {    
     box-sizing: border-box;
@@ -51,6 +62,13 @@ form {
     border-color: darkcyan;
     border-radius: 5px;
 }
+form input{
+    border: 2px solid lightgrey;
+}
+form input:focus{
+    outline-color: lightgrey;
+}
+
 /* Style the footer */
 footer{
     color: black;
